@@ -13,7 +13,6 @@
 		40C062BB29762E3F000B6639 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 40C062B929762E3F000B6639 /* Main.storyboard */; };
 		40C062BD29762E40000B6639 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 40C062BC29762E40000B6639 /* Assets.xcassets */; };
 		40C062C029762E40000B6639 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 40C062BE29762E40000B6639 /* LaunchScreen.storyboard */; };
-		40C062C9297630F2000B6639 /* Secrets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40C062C8297630F2000B6639 /* Secrets.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,7 +24,6 @@
 		40C062BC29762E40000B6639 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		40C062BF29762E40000B6639 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		40C062C129762E40000B6639 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		40C062C8297630F2000B6639 /* Secrets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Secrets.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,7 +56,6 @@
 		40C062B229762E3F000B6639 /* RecipeSearch */ = {
 			isa = PBXGroup;
 			children = (
-				40C062C7297630A5000B6639 /* Secrets */,
 				40C062B329762E3F000B6639 /* AppDelegate.swift */,
 				40C062B529762E3F000B6639 /* SceneDelegate.swift */,
 				40C062B729762E3F000B6639 /* ViewController.swift */,
@@ -68,14 +65,6 @@
 				40C062C129762E40000B6639 /* Info.plist */,
 			);
 			path = RecipeSearch;
-			sourceTree = "<group>";
-		};
-		40C062C7297630A5000B6639 /* Secrets */ = {
-			isa = PBXGroup;
-			children = (
-				40C062C8297630F2000B6639 /* Secrets.swift */,
-			);
-			path = Secrets;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -150,7 +139,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				40C062B829762E3F000B6639 /* ViewController.swift in Sources */,
-				40C062C9297630F2000B6639 /* Secrets.swift in Sources */,
 				40C062B429762E3F000B6639 /* AppDelegate.swift in Sources */,
 				40C062B629762E3F000B6639 /* SceneDelegate.swift in Sources */,
 			);

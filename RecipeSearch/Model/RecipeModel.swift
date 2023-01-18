@@ -17,4 +17,5 @@ struct Hit: Decodable {
 
 struct Recipe: Decodable {
     let label: String
+    let image: String
 }

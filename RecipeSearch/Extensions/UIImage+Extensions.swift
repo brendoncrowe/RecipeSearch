@@ -12,7 +12,7 @@ extension UIImageView {
     
     // instance method, works on an instance of UIImageView
     
-    func getImage(with request: URLRequest,
+    func getImage(with urlString: String,
                   completion: @escaping (Result<UIImage, AppError>) ->()) {
         
         // configure UIActivityIndicatorView
@@ -23,10 +23,16 @@ extension UIImageView {
         // this line of code adds the UIActivityIndicatorView to the UIImageView
         activityIndicator.startAnimating()
         
-        // because NetworkHelper is capturing activityIndicator, you must declare a weak reference
-        NetworkHelper.shared.performDataTask(with: request) { (result) in
+        guard let url = URL(string: urlString) else {
+            completion(.failure(.badURL(urlString)))
+            return
+        }
+        
+        let request = URLRequest(url: url)
+        
+        NetworkHelper.shared.performDataTask(with: request) { [weak activityIndicator] (result) in
             DispatchQueue.main.async {
-                activityIndicator.stopAnimating()
+                activityIndicator?.stopAnimating()
             }
             switch result {
             case .failure(let appError):

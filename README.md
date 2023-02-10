@@ -104,6 +104,6 @@ class NetworkHelper {
   }
 }
 ```
-## Screen Shot 
+## Media
 
-![Main Image](Assets/mainImage.png)
+![Main Image](Assets/mainImage.png) ![gif](Assets/RecipeSearch.gif)

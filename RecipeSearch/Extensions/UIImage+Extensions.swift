@@ -17,7 +17,7 @@ extension UIImageView {
         
         // configure UIActivityIndicatorView
         let activityIndicator = UIActivityIndicatorView(style: .large)
-        activityIndicator.color = .systemBlue
+        activityIndicator.color = .systemGray2
         activityIndicator.center = center // center implies center of UIImageView
         addSubview(activityIndicator)
         // this line of code adds the UIActivityIndicatorView to the UIImageView

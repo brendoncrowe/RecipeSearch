@@ -21,7 +21,6 @@ enum AppError: Error {
 class NetworkHelper {
 
   static let shared = NetworkHelper()
-  
   private var session: URLSession
 
   private init() {

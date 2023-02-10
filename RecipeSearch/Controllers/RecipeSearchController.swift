@@ -8,7 +8,7 @@
 import UIKit
 
 class RecipeSearchController: UIViewController {
-
+    
     
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var searchBar: UISearchBar!
@@ -24,6 +24,10 @@ class RecipeSearchController: UIViewController {
     var searchQuery = ""
     
     override func viewDidLoad() {
+        configVC()
+    }
+    
+    func configVC() {
         super.viewDidLoad()
         tableView.dataSource = self
         searchBar.delegate = self
@@ -31,7 +35,6 @@ class RecipeSearchController: UIViewController {
         loadRecipe(searchQuery: "Mac and Cheese")
         navigationController?.navigationBar.prefersLargeTitles = true
         navigationItem.title = "Recipe Search"
-        
     }
     
     func loadRecipe(searchQuery: String) {

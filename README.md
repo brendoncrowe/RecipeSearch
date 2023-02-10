@@ -2,9 +2,10 @@
 This app uses this Edamam API. The user can search for a recipe, and 50 recipes are returned related to the search Query 
 
 ## Key Components
-<ul>
-  <li>Extension on UIImage</li>
-  </ul>
+  - Extension on UIImage
+  
+<details>
+<summary>Code</summary>
   
 ``` Swift
 extension UIImageView {
@@ -45,9 +46,11 @@ extension UIImageView {
     }
 }
 ```
-<ul>
-<li> Network Helper, a singleton class used to make URLSession more accessible across the app </li>
-</ul>
+</details>
+
+- Network Helper, a singleton class used to make URLSession more accessible across the app 
+<details>
+<summary>Code</summary>
 
 ``` Swift
 
@@ -104,6 +107,8 @@ class NetworkHelper {
   }
 }
 ```
+</details>
+
 ## Media
 
 ![Main Image](Assets/mainImage.png) ![gif](Assets/RecipeSearch.gif)

@@ -103,7 +103,7 @@ class NetworkHelper {
     
   }
 }
-
+```
 ## Screen Shot 
 
-![Main Image](Assets/mainimage.png)
+![Main Image](Assets/mainImage.png)

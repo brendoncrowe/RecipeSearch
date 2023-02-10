@@ -1,5 +1,5 @@
 # Recipe Search 
-This app uses this Edamam API. The user can search for a recipe, and 50 recipes are returned related to the search Query 
+This app uses the Edamam API allowing the user to search for food recipes. 50 recipes related to the search query are returned.
 
 ## Key Components
   - Extension on UIImage
